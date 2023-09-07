@@ -20,5 +20,44 @@
   "bugs": {
     "url": "https://github.com/soulJF999/souljf-bilili-plugin/issues"
   },
-  "homepage": "https://github.com/soulJF999/souljf-bilili-plugin#readme"
+  "homepage": "https://github.com/soulJF999/souljf-bilili-plugin#readme",
+  "dependencies": {
+    "@ffmpeg/core": "^0.11.0",
+    "@ffmpeg/ffmpeg": "^0.11.6",
+    "axios": "^1.5.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": true,
+          "singleQuote": true,
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  }
 }
