@@ -1,0 +1,24 @@
+{
+  "name": "souljf-bilibili-plugin",
+  "version": "1.0.0",
+  "description": "a tool to covert bilibili video to mp3 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulJF999/souljf-bilili-plugin.git"
+  },
+  "keywords": [
+    "mp3",
+    "bilibili",
+    "tool"
+  ],
+  "author": "souljf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulJF999/souljf-bilili-plugin/issues"
+  },
+  "homepage": "https://github.com/soulJF999/souljf-bilili-plugin#readme"
+}
