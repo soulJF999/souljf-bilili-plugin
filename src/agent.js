@@ -1,5 +1,5 @@
-import axios from "axios";
+import axios from 'axios';
 
-const agent = axios.create({timeout: 0})
+const agent = axios.create({ timeout: 0 });
 
-export default agent
+export default agent;
