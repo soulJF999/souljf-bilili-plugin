@@ -1,8 +1,8 @@
-import { download } from './download';
-import { flv2mp3 } from './flv2mp3';
+import { download } from './download.js';
+import { flv2mp3 } from './flv2mp3.js';
 import * as fs from 'fs';
 import { program } from 'commander';
-import { sleep } from './util';
+import { sleep } from './util.js';
 import { resolve } from 'path';
 
 export async function download2mp3({ url, index }) {

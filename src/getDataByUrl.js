@@ -1,4 +1,4 @@
-import agent from './agent';
+import agent from './agent.js';
 
 export async function getDataByUrl(url) {
   const { data } = await agent.get(url);

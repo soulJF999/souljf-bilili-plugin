@@ -1,8 +1,8 @@
 import { program, InvalidArgumentError } from 'commander';
-import { getDataByUrl } from './src/getDataByUrl';
+import { getDataByUrl } from './src/getDataByUrl.js';
 import { createRequire } from 'module';
-import { sleep } from './src/util';
-import { download2mp3 } from './src/download2mp3';
+import { sleep } from './src/util.js';
+import { download2mp3 } from './src/download2mp3.js';
 
 const require = createRequire(import.meta.url);
 const pkg = require('./package.json');
@@ -42,7 +42,7 @@ program
 
 program.parse(process.argv);
 const argv = program.opts();
-program.version(pkg.version)(async function () {
+(async function () {
   const urls = typeof argv.url === 'string' ? [argv.url] : argv.url;
   let pages = [];
 

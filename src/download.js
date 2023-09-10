@@ -1,15 +1,15 @@
 import fs from 'fs';
 import { createHash } from 'crypto';
-import { getDataByUrl } from './getDataByUrl';
-import { createProgressBar } from './progress';
-import { getName } from './naming';
-import agent from './agent';
+import { getDataByUrl } from './getDataByUrl.js';
+import { createProgressBar } from './progress.js';
+import { getName } from './naming.js';
+import agent from './agent.js';
 import axios from 'axios';
 
 async function _download(url, title, filename, index) {
   try {
-    fs.promises.stat(filename);
-    fs.promises.unlink(filename);
+    await fs.promises.stat(filename);
+    await fs.promises.unlink(filename);
   } catch (err) {
     console.log(err);
   }
