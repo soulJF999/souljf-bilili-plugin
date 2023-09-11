@@ -11,7 +11,7 @@ async function _download(url, title, filename, index) {
     await fs.promises.stat(filename);
     await fs.promises.unlink(filename);
   } catch (err) {
-    console.log(err);
+    // ignore
   }
   return new Promise((resolve, reject) => {
     agent({
