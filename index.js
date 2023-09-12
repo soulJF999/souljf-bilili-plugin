@@ -18,7 +18,7 @@ function validateInt(value) {
 
 program
   .requiredOption(
-    '-u, --url [urls]',
+    '-u, --url [urls...]',
     `the video set (or single) url of bilibili, can input multiple urls.`,
   )
   .option('-t, --threads<number>', 'how many download threads', validateInt, 10)
